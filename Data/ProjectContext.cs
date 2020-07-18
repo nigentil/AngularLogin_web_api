@@ -14,6 +14,7 @@ namespace AngularLogin_web_api.Data
         public DbSet<UserType> UserTypes { get; set; }
         public DbSet<Company> Companies { get; set; }
         public DbSet<CompanyUser> CompanyUsers { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("Password=zs 2012!*;Persist Security Info=True;User ID=sa;Initial Catalog=Angular;Data Source=ITLNB063");
